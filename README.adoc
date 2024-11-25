@@ -58,7 +58,7 @@ Ez elvileg egy már létező könyvtár, de ha mégsem, akkor adjuk ki itt is az
 ====
 Egy aliast is létrehozhatunk a gépen:
 
-nyissunk egy terminal ablakot, és adjuk hozzá a .zshrc fájl végéhez -új sorban természetesen - a következő két sort:
+nyissunk egy terminal ablakot, és adjuk hozzá a .zshrc fájl végéhez - új sorban természetesen - a következőt:
  
  alias abevjava="~/Downloads/abevjava.sh"
  alias abev="abevjava"
