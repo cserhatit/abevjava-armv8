@@ -8,7 +8,7 @@
 
 = abevjava-armv8
 
-Abevjava futtatása Macbook Mx processzorral
+Abevjava futtatása Macbook Mx processzorral.
 
 :sectnums!:
 == Előfeltételek
@@ -58,10 +58,10 @@ Ez elvileg egy már létező könyvtár, de ha mégsem, akkor adjuk ki itt is az
 ====
 Egy aliast is létrehozhatunk a gépen:
 
-nyissunk egy terminal ablakot, és adjuk hozzá a .zshrc fájlhoz a következő sort:
-
-alias abevjava="~/Downloads/abevjava.sh"
-alias abev="abevjava"
+nyissunk egy terminal ablakot, és adjuk hozzá a .zshrc fájl végéhez -új sorban természetesen - a következő két sort:
+ 
+ alias abevjava="~/Downloads/abevjava.sh"
+ alias abev="abevjava"
 
 ezután ha új terminal ablakot nyitunk, akkor `abev` vagy `abevjava` paranccsal is indítható lesz az alkalmazás.
 
