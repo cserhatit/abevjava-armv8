@@ -12,7 +12,8 @@ Abevjava futtatása Macbook Mx processzorral
 
 * Git repo le legyen töltve a saját gépünkre
 
- Nyissunk egy terminal ablakot (CMD+Space és kezdjük el gépelni, hogy terminal)
+** Nyissunk egy terminal ablakot (CMD+Space és kezdjük el gépelni, hogy terminal)
+ 
  cd Downloads
  git clone https://github.com/cserhatit/abevjava-armv8 
  
