@@ -1,0 +1,54 @@
+= abevjava-armv8
+
+Abevjava futtatása Macbook Mx processzorral
+
+:sectnums!:
+== Előfeltételek
+
+* XQuartz https://www.xquartz.org/ [letöltése és telepítése] (futtatni a .pkg kiterjesztésű fájlt)
+** Telepítés után indítsuk el az XQuartz alkalmazást és a menüben az XQuartz/Settings.../Security menüpont alatt tegyünk egy pipát az 'Allow connections from network clients' mellé.
+
+* Docker https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64 [letöltése és telepítése]
+
+== Telepítés
+
+* A számítógépünkjön létre kell hozni a következő könyvtárakat az abevjava mentések számára:
+
+** ~/abevjava
+** ~/abevjava/abevjava-keret
+
+  mkdir ~/abevjava && mkdir ~/abevjava-keret
+
+** /tmp/.X11-unix
+
+[WARNING]
+====
+Ez elvileg egy már létező könyvtár, de ha mégsem, akkor adjuk ki itt is az mkdir parancsot:
+
+  mkdir /tmp/.X11-unix
+
+====
+
+* Menjünk abba a könyvtárba, ahová letöltöttük a fájlokat ebből a git repositoryból.
+
+ példánkban: cd ~/Downloads/abevjava-armv8
+ 
+== Futtatás
+
+* Futtassuk le az abevjava.sh fájlt:
+
+ ./abevjava.sh
+ 
+
+[TIP]
+====
+Egy aliast is létrehozhatunk a gépen:
+
+nyissunk egy terminal ablakot, és adjuk hozzá a .zshrc fájlhoz a következő sort:
+
+alias abevjava="~/abevjava.sh"
+alias abev="abevjava"
+
+ezután ha új terminal ablakot nyitunk, akkor `abev` vagy `abevjava` paranccsal is indítható lesz az alkalmazás.
+
+====
