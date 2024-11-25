@@ -1,3 +1,11 @@
+:imagesdir: images
+:couchbase_version: current
+:toc:
+:project_id: abevjava-on-arm
+:icons: font
+:source-highlighter: prettify
+:tags: guides,meta
+
 = abevjava-armv8
 
 Abevjava futtatása Macbook Mx processzorral
@@ -5,10 +13,10 @@ Abevjava futtatása Macbook Mx processzorral
 :sectnums!:
 == Előfeltételek
 
-* XQuartz https://www.xquartz.org/ [letöltése és telepítése] (futtatni a .pkg kiterjesztésű fájlt)
+* XQuartz https://www.xquartz.org[letöltése és telepítése] (futtatni a .pkg kiterjesztésű fájlt)
 ** Telepítés után indítsuk el az XQuartz alkalmazást és a menüben az XQuartz/Settings.../Security menüpont alatt tegyünk egy pipát az 'Allow connections from network clients' mellé.
 
-* Docker https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64 [letöltése és telepítése]
+* Docker https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64[letöltése és telepítése]
 
 * Git repo le legyen töltve a saját gépünkre
 
@@ -24,7 +32,7 @@ Abevjava futtatása Macbook Mx processzorral
 ** ~/abevjava
 ** ~/abevjava/abevjava-keret
 
-  mkdir ~/abevjava && mkdir ~/abevjava-keret
+  mkdir -p ~/abevjava/abevjava-keret
 
 ** /tmp/.X11-unix
 
@@ -44,8 +52,7 @@ Ez elvileg egy már létező könyvtár, de ha mégsem, akkor adjuk ki itt is az
 
 * Futtassuk le az abevjava.sh fájlt:
 
- ./abevjava.sh
- 
+ ~/Downloads/abevjava.sh
 
 [TIP]
 ====
@@ -53,7 +60,7 @@ Egy aliast is létrehozhatunk a gépen:
 
 nyissunk egy terminal ablakot, és adjuk hozzá a .zshrc fájlhoz a következő sort:
 
-alias abevjava="~/abevjava.sh"
+alias abevjava="~/Downloads/abevjava.sh"
 alias abev="abevjava"
 
 ezután ha új terminal ablakot nyitunk, akkor `abev` vagy `abevjava` paranccsal is indítható lesz az alkalmazás.
