@@ -6,7 +6,7 @@ services:
       - ~/abevjava/abevjava-keret:/usr/share/abevjava/abevjava-keret/:rw
       - ~/abevjava:/root/abevjava/:rw
       - /tmp/.X11-unix:/tmp/.X11-unix
-    image: cserhatit/abevjava-java18
+    image: cserhatit/abevjava-java18-arm
     environment:
       RUN_OPTS: -Dsun.java2d.xrender=false -Dsun.java2d.opengl=false -Djavax.xml.bind.JAXBContext=com.sun.xml.internal.bind.v2.ContextFactory
       DISPLAY: host.docker.internal:0

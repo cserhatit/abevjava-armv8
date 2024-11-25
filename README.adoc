@@ -10,9 +10,15 @@ Abevjava futtatása Macbook Mx processzorral
 
 * Docker https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64 [letöltése és telepítése]
 
+* Git repo le legyen töltve a saját gépünkre
+
+ Nyissunk egy terminal ablakot (CMD+Space és kezdjük el gépelni, hogy terminal)
+ cd Downloads
+ git clone https://github.com/cserhatit/abevjava-armv8 
+ 
 == Telepítés
 
-* A számítógépünkjön létre kell hozni a következő könyvtárakat az abevjava mentések számára:
+* A számítógépünkön létre kell hozni a következő könyvtárakat az abevjava mentések számára:
 
 ** ~/abevjava
 ** ~/abevjava/abevjava-keret
