@@ -26,13 +26,17 @@ Abevjava futtatása Macbook Mx processzorral.
  git clone https://github.com/cserhatit/abevjava-armv8 
  
 == Telepítés
+* Telepítsük az ÁNYK-t 
 
-* A számítógépünkön létre kell hozni a következő könyvtárakat az abevjava mentések számára:
+https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvany_apeh/keretprogramok/AbevJava[ÁNYK letöltése]
 
-** ~/abevjava
-** ~/abevjava/abevjava-keret
+A telepítés helye a home könyvtárban legyen az abevjava/abevjava-keret alá.
+pl. /Users/sajat.user/abevjava/abevjava-keret
 
-  mkdir -p ~/abevjava/abevjava-keret
+A nyomtatványoknak lehet adni egy ilyet: /Users/sajat.user/abevjavafiles
+
+
+* A számítógépünkön hozzuk létre a következő könyvtárat (ha nem lenne):
 
 ** /tmp/.X11-unix
 

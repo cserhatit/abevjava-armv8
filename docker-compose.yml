@@ -1,10 +1,9 @@
-version: "3.8"
 services:
   abevjava:
     container_name: abevjava
     volumes:
       - ~/abevjava/abevjava-keret:/usr/share/abevjava/abevjava-keret/:rw
-      - ~/abevjava:/root/abevjava/:rw
+      - ~/abevjavafiles:/root/abevjava/:rw
       - /tmp/.X11-unix:/tmp/.X11-unix
     image: cserhatit/abevjava-java18-arm
     environment:
