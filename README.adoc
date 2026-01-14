@@ -31,10 +31,12 @@ Abevjava futtatása Macbook Mx processzorral.
 https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvany_apeh/keretprogramok/AbevJava[ÁNYK letöltése]
 
 A telepítés helye a home könyvtárban legyen az abevjava/abevjava-keret alá.
-pl. /Users/sajat.user/abevjava/abevjava-keret
+ 
+  /Users/sajat.user/abevjava/abevjava-keret
 
-A nyomtatványoknak lehet adni egy ilyet: /Users/sajat.user/abevjavafiles
+A nyomtatványoknak az alábbi könyvtárat állítsuk be:
 
+  /Users/sajat.user/abevjavafiles
 
 * A számítógépünkön hozzuk létre a következő könyvtárat (ha nem lenne):
 
